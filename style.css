@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:100px;
+  background: url(background.gif);
+}
+
+.field{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #cccccc;
+  background: url(stars.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.excel{
+  width: 50px;
+  height: 50px;
+  padding:5px;
+}
+
+.snakeBody{
+  background: url(scale.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+.head{
+  background: url(cat.png);
+  border-radius: 10%;
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+.mouse{
+  background: url(mouse-color.png);
+  border-radius: 10%;
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.left{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-size: 100PX;
+  color: white;
+  font-family: cursive;
+}
+
+.right{
+  position: absolute;
+  top: 40%;
+  right:2%;
+  font-size: 100PX;
+  color: white;
+  font-family: cursive;
+}
+
+.music{
+  text-align: center;
+}
+.newgame{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1900px) {
+  body{
+    margin:unset;
+    margin-top: 60px;
+  } 
+
+  .left{
+    position: unset;
+    top: unset;
+    left: 0%;
+    font-size: 60PX;
+    text-align: center;
+    font-family: cursive;
+  }
+  
+  .right{
+    position: unset;
+    top: unset;
+    right:0%;
+    font-size: 50PX;
+    text-align: center;
+    font-family: cursive;
+  }
+}
+
+@media only screen and (max-width: 500px) { body {width: fit-content;}}
